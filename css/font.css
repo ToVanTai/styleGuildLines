@@ -1,0 +1,12 @@
+@font-face {
+  font-family: GoogleSans regular;
+  src: url(../assets/font/GoogleSans-Regular.otf);
+}
+@font-face {
+  font-family: GoogleSans bold;
+  src: url(../assets/font/GoogleSans-Bold.otf);
+}
+@font-face {
+  font-family: GoogleSans medium;
+  src: url(../assets/font/GoogleSans-Medium.otf);
+}

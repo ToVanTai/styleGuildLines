@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Ứng dụng Demo - CUKCUK.VN</title>
+  </head>
+  <body style="padding: 10px">
+    <!-- start button -->
+    <p>BUTTON</p>
+    <div class="m-full-w">
+      <button class="m-btn">Nộp hồ sơ</button>
+    </div>
+    <p style="margin-top: 50px">BUTTON ICON</p>
+    <div class="m-full-w">
+      <button class="m-btn icon">
+        <i class="fas fa-save"></i>
+        Lập hồ sơ
+      </button>
+    </div>
+    <div class="m-full-w">
+      <div class="m-btn-group">
+        <button class="m-btn icon">
+          <i class="fas fa-save"></i>
+          Lập hồ sơ
+        </button>
+        <button class="m-btn-icon-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+    <!-- end button -->
+
+    <!-- start combobox -->
+    <p style="margin-top: 50px">COMBO BOX</p>
+    <div class="m-full-w">
+      <div class="row">
+        <div class="col col-3">
+          <label class="m-label-field-input m-label"> Chọn tháng </label>
+          <select class="m-cbb" name="month">
+            <option value="" selected disabled>Chọn/Nhập thông tin</option>
+            <option value="1">Tháng 1</option>
+            <option value="2">Tháng 2</option>
+            <option value="3">Tháng 3</option>
+            <option value="4">Tháng 4</option>
+            <option value="5">Tháng 5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- end combobox -->
+
+    <!-- start field input - label -->
+    <p style="margin-top: 50px">FILED INPUT - LABEL</p>
+    <div class="row">
+      <div class="col col-3">
+        <label class="m-label-field-input">Label</label>
+        <div class="m-form-control-input">
+          <input
+            class="m-input"
+            type="text"
+            placeholder="Tìm kiếm theo tên, số hồ sơ" />
+          <i class="fas fa-times-circle m-input-icon-close"></i>
+        </div>
+      </div>
+      <div class="col col-3">
+        <label class="m-label-field-input">Label</label>
+        <div class="m-form-control-input error">
+          <div class="m-input-error-message">
+            <p>Mật khẩu</p>
+            <p>Không đúng định dạng</p>
+          </div>
+          <input
+            value="Hell/"
+            class="m-input"
+            type="text"
+            placeholder="Tìm kiếm theo tên, số hồ sơ" />
+          <i class="fas fa-times-circle m-input-icon-close"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end field input - label -->
+    <!-- start input icon -->
+    <p style="margin-top: 50px">FIELD INPUT - ICON</p>
+    <div class="row">
+      <div class="col col-3">
+        <div class="m-form-control-input">
+          <div class="m-input-icon-search">
+            <i class="fas fa-search"></i>
+          </div>
+          <input
+            value="Hell/"
+            class="m-input icon"
+            type="text"
+            placeholder="Tìm kiếm theo tên, số hồ sơ" />
+        </div>
+      </div>
+      <div class="col col-3">
+        <div class="m-form-control-input error">
+          <div class="m-input-error-message">
+            <p>Mật khẩu</p>
+            <p>Không đúng định dạng</p>
+          </div>
+          <div class="m-input-icon-search">
+            <i class="fas fa-search"></i>
+          </div>
+          <input
+            value="Hell/"
+            class="m-input icon"
+            type="text"
+            placeholder="Tìm kiếm theo tên, số hồ sơ" />
+        </div>
+      </div>
+    </div>
+    <!-- end input icon -->
+    <!-- start toast messenger -->
+    <div class="m-toast-messenger-container">
+      <div class="m-toast-messenger-item m-err">
+        <div class="content">
+          <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="messenger">Nội dung đi kèm tiêu đề</div>
+        </div>
+        <div class="close"><i class="fas fa-times"></i></div>
+      </div>
+
+      <div class="m-toast-messenger-item m-warning">
+        <div class="content">
+          <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+          <div class="messenger">Nội dung đi kèm tiêu đề</div>
+        </div>
+        <div class="close"><i class="fas fa-times"></i></div>
+      </div>
+
+      <div class="m-toast-messenger-item m-success">
+        <div class="content">
+          <div class="icon"><i class="fas fa-check-circle"></i></div>
+          <div class="messenger">Nội dung đi kèm tiêu đề</div>
+        </div>
+        <div class="close"><i class="fas fa-times"></i></div>
+      </div>
+
+      <div class="m-toast-messenger-item m-info">
+        <div class="content">
+          <div class="icon"><i class="fas fa-info-circle"></i></div>
+          <div class="messenger">Nội dung đi kèm tiêu đề</div>
+        </div>
+        <div class="close"><i class="fas fa-times"></i></div>
+      </div>
+    </div>
+    <!-- end toast messenger -->
+    <!-- start table -->
+    <p>TABLE</p>
+    <table class="m-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>#</th>
+          <th>Mã nhân viên</th>
+          <th>Họ và tên</th>
+          <th>Vị trí/Chức vụ</th>
+          <th>Bộ phận/Phòng ban</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="m-table-checkbox"><input type="checkbox" /></td>
+          <td>1</td>
+          <td>091824302</td>
+          <td>Nguyễn Hương Giang</td>
+          <td>Tổng giám đốc</td>
+          <td>Khối sản xuất</td>
+        </tr>
+        <tr class="checked">
+          <td class="m-table-checkbox"><input type="checkbox" checked /></td>
+          <td>2</td>
+          <td>091824383</td>
+          <td>Nguyễn Tuấn Hưng</td>
+          <td>Tổng giám đốc</td>
+          <td>Văn phòng Sale</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- end table -->
+    <!-- start page navigation -->
+    <p>PAGE NAVIGATION</p>
+    <div class="m-pagination">
+      <ul>
+        <li class="btn start"><i class="fas fa-angle-double-left"></i></li>
+        <li class="btn prev"><i class="fas fa-angle-left"></i></li>
+        <li class="num active">1</li>
+        <li class="num">2</li>
+        <li class="num">3</li>
+        <li class="num">4</li>
+        <li class="btn next"><i class="fas fa-angle-right"></i></li>
+        <li class="btn end"><i class="fas fa-angle-double-right"></i></li>
+      </ul>
+    </div>
+    <!-- end page navigation -->
+    <!-- start collab -->
+    <p>Collab</p>
+    <table class="m-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>#</th>
+          <th>Mã nhân viên</th>
+          <th>Họ và tên</th>
+          <th>Vị trí/Chức vụ</th>
+          <th>Bộ phận/Phòng ban</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="m-table-checkbox"><input type="checkbox" /></td>
+          <td>1</td>
+          <td>091824302</td>
+          <td>Nguyễn Hương Giang</td>
+          <td>Tổng giám đốc</td>
+          <td>Khối sản xuất</td>
+        </tr>
+        <tr class="checked">
+          <td class="m-table-checkbox"><input type="checkbox" checked /></td>
+          <td>2</td>
+          <td>091824383</td>
+          <td>Nguyễn Tuấn Hưng</td>
+          <td>Tổng giám đốc</td>
+          <td>Văn phòng Sale</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="m-collab-bottom">
+      <div class="m-quantity-show">Hiển thị <b>01-20/123</b> lao động</div>
+      <div class="m-pagination">
+        <ul>
+          <li class="btn start"><i class="fas fa-angle-double-left"></i></li>
+          <li class="btn prev"><i class="fas fa-angle-left"></i></li>
+          <li class="num active">1</li>
+          <li class="num">2</li>
+          <li class="num">3</li>
+          <li class="num">4</li>
+          <li class="btn next"><i class="fas fa-angle-right"></i></li>
+          <li class="btn end"><i class="fas fa-angle-double-right"></i></li>
+        </ul>
+      </div>
+      <div class="m-collab-change-quantity">
+        <b>20</b> lao động/trang
+        <div class="m-collab-change-quantity-actions">
+          <span class="increase"><i class="fas fa-chevron-up"></i></span>
+          <span class="decrease"><i class="fas fa-chevron-down"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- end collab -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

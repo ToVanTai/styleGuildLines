@@ -1,0 +1,30 @@
+.m-pagination ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.m-pagination li {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.m-pagination li.btn {
+  border-radius: 4px;
+}
+.m-pagination li.num {
+  border-radius: 50%;
+  border: 1px solid #bbb;
+}
+.m-pagination li:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+.m-pagination li.active {
+  color: #fff !important;
+  background-color: #01b075 !important;
+  border-color: #01b075 !important;
+  cursor: default;
+}

@@ -1,0 +1,116 @@
+.m-label {
+  display: block;
+  margin-bottom: 4px;
+}
+/* start css select input*/
+.m-cbb {
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 12px;
+  font-size: 13px;
+  color: #000;
+  font-family: GoogleSans regular;
+  cursor: pointer;
+}
+.m-cbb:focus {
+  border-color: #019160;
+}
+/* end css select input*/
+
+/* start css input */
+.m-form-control-input {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.m-form-control-input.error input {
+  border-color: #ff4747;
+}
+.m-form-control-input.error .m-input-error-message {
+  position: absolute;
+  z-index: 1;
+  background-color: #ff4747;
+  border-radius: 4px;
+  padding: 8px;
+  color: #fff;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - -3px));
+}
+.m-form-control-input.error .m-input-error-message::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  border-width: 10px 10px;
+  border-color: transparent;
+  border-top-color: #ff4747;
+  border-style: solid;
+
+  transform: translate(-50%, 100%);
+}
+
+.m-input-icon-close {
+  cursor: pointer;
+  color: #bbb;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(calc(-100% - 10px), -50%);
+}
+.m-input-icon-search {
+  cursor: pointer;
+  color: #bbb;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  padding-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.m-input {
+  position: relative;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding-left: 16px;
+  font-size: 13px;
+  color: #000;
+  font-family: GoogleSans regular;
+}
+.m-input.icon {
+  padding-left: 40px;
+}
+.m-input::placeholder {
+  font-size: 11px;
+  color: #bbb;
+  font-family: GoogleSans regular;
+}
+.m-input:focus {
+  border-color: #019160;
+}
+
+.m-input::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+/* end css input */

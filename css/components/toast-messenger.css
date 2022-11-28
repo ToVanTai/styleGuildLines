@@ -1,0 +1,52 @@
+.m-toast-messenger-container {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.m-toast-messenger-item {
+  height: 48px;
+  width: 260px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.m-toast-messenger-item.m-err .icon,
+.m-toast-messenger-item.m-err .close {
+  color: #ffcece;
+}
+.m-toast-messenger-item.m-warning .icon,
+.m-toast-messenger-item.m-warning .close {
+  color: #ffe7af;
+}
+.m-toast-messenger-item.m-success .icon,
+.m-toast-messenger-item.m-success .close {
+  color: #baffe7;
+}
+.m-toast-messenger-item.m-info .icon,
+.m-toast-messenger-item.m-info .close {
+  color: #d8eaff;
+}
+
+.m-toast-messenger-item .content {
+  display: flex;
+  align-items: center;
+}
+.m-toast-messenger-item .icon {
+  width: 40px;
+  text-align: center;
+  font-size: 24px;
+  padding-right: 10px;
+}
+.m-toast-messenger-item .close {
+  cursor: pointer;
+  font-size: 24px;
+}

@@ -1,0 +1,25 @@
+.m-collab-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.m-collab-change-quantity {
+  display: flex;
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+}
+.m-collab-change-quantity-actions {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.m-collab-change-quantity-actions span {
+  display: flex;
+  height: 8px;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+@import url(../assets/font/fontawesome-5.15.1/css/all.min.css);
+@import url(../assets/font/fontawesome-5.15.1/js/all.min.js);
+@import url(./font.css);
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./common.css);
+@import url(./components/index.css);
+@import url(./layout/index.css);

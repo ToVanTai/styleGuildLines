@@ -1,0 +1,105 @@
+/*start define heading*/
+.m-heading {
+  font-size: 24px;
+  color: #000;
+  font-family: GoogleSans bold;
+}
+.m-title {
+  font-size: 20px;
+  color: #000;
+  font-family: GoogleSans bold;
+}
+.m-title2 {
+  font-size: 15px;
+  color: #000;
+  font-family: GoogleSans bold;
+}
+.m-label-field-input {
+  font-size: 13px;
+  color: #000;
+  font-family: GoogleSans medium;
+}
+.m-label {
+  font-size: 13px;
+  color: #454545;
+  font-family: GoogleSans regular;
+}
+.m-content-details {
+  font-size: 13px;
+  color: #000;
+  font-family: GoogleSans medium;
+}
+.m-body-content {
+  font-size: 13px;
+  color: #454545;
+  font-family: GoogleSans regular;
+}
+.m-sub-textHint-text {
+  font-size: 11px;
+  color: #bbbbbb;
+  font-family: GoogleSans regular;
+}
+/*end define heading*/
+
+.m-full-w {
+  display: block;
+  width: 100%;
+}
+
+/*start define grid*/
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+}
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
+/*end define grid*/
