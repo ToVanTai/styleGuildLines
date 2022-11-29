@@ -1,0 +1,143 @@
+/* start css popup */
+.m-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+}
+.m-popup.open {
+  display: block;
+}
+.m-popup-container {
+  width: 380px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 16%);
+}
+.m-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 28px;
+  width: 28px;
+  text-align: center;
+  color: #8d8f9c;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  border-bottom-left-radius: 4px;
+}
+.m-popup-close:hover {
+  background: #e5e5e5;
+}
+.m-popup-heading {
+  padding: 24px 48px 24px 24px;
+}
+.m-popup-body {
+  padding: 0px 24px 24px 24px;
+  display: flex;
+  align-items: center;
+}
+.m-popup-body-icon {
+  flex-shrink: 0;
+  flex-basis: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-popup-body-icon i {
+  font-size: 18px;
+}
+.m-popup-body-description {
+  padding-left: 10px;
+  flex-grow: 1;
+  line-height: 18px;
+}
+.m-popup-footer {
+  background-color: #f4f4f4;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.m-popup.warning .m-popup-body-icon i {
+  color: #fec300;
+}
+.m-popup.warning .m-popup-footer button:first-child,
+.m-popup.danger .m-popup-footer button:first-child {
+  background-color: #bbb;
+  color: #000;
+}
+.m-popup.warning .m-popup-footer button:first-child:hover,
+.m-popup.warning .m-popup-footer button:first-child:active,
+.m-popup.danger .m-popup-footer button:first-child:hover,
+.m-popup.danger .m-popup-footer button:first-child:active {
+  background-color: #e5e5e5;
+}
+.m-popup.notify .m-popup-footer button:first-child {
+  display: none;
+}
+.m-popup.danger .m-popup-footer button:last-child {
+  background-color: #f65454;
+  color: #fff;
+}
+.m-popup.danger .m-popup-body-icon i {
+  color: #ea2b2b;
+}
+.m-popup.notify .m-popup-body-icon {
+  display: none;
+}
+/* end css popup */
+.m-popup-form {
+  display: none;
+  position: fixed;
+  inset: 10px;
+  z-index: 10000;
+}
+.m-popup.open {
+  display: block;
+}
+.m-popup-container {
+  width: 380px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 16%);
+}
+.m-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 28px;
+  width: 28px;
+  text-align: center;
+  color: #8d8f9c;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  border-bottom-left-radius: 4px;
+}
+.m-popup-close:hover {
+  background: #e5e5e5;
+}
+.m-popup-heading {
+  padding: 24px 48px 24px 24px;
+}
+.m-popup-body {
+  padding: 0px 24px 24px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.m-popup-footer {
+  background-color: #f4f4f4;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}

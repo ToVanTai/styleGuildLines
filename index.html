@@ -254,6 +254,47 @@
       </div>
     </div>
     <!-- end collab -->
+    <!-- start pop-up -->
+    <p>POP-UP</p>
+    <button class="m-btn" onclick="showPopup('warning')">
+      Show popup warning
+    </button>
+    <button class="m-btn btn-danger" onclick="showPopup('danger')">
+      Show popup danger
+    </button>
+    <button class="m-btn btn-disable" onclick="showPopup('notify')">
+      Show popup notify
+    </button>
+    <button class="m-btn" onclick="showPopup('form-add')">
+      Show popup form add
+    </button>
+    <button class="m-btn" onclick="showPopup('form-update')">
+      Show popup form update
+    </button>
+    <div class="m-popup">
+      <div class="m-popup-container">
+        <div class="m-popup-close" onclick="closePopup()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popup-heading m-title">Đóng Form thông tin chung</div>
+        <div class="m-popup-body">
+          <div class="m-popup-body-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-popup-body-description">
+            Bạn có chắc muấn đóng form nhập
+            <p>"Thông tin chung của thủ tục 603"</p>
+            hay không
+          </div>
+        </div>
+        <div class="m-popup-footer">
+          <button class="m-btn">Tiếp tục nhập</button>
+          <button class="m-btn">Đóng</button>
+        </div>
+      </div>
+    </div>
+    <div class="m-overlay"></div>
+    <!-- end pop-up -->
     <script src="./js/app.js"></script>
   </body>
 </html>
