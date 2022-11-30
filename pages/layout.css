@@ -66,8 +66,14 @@
   flex-grow: 1;
   height: 100%;
   padding-left: 24px;
+  padding-right: 16px;
   display: flex;
   align-items: center;
+}
+.m-header-right-bank {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .m-header-right-banklogo {
   width: calc(var(--header-height) - 10px);
@@ -87,6 +93,53 @@
   margin-right: 10px;
 }
 .m-header-right-bankselectdropdown {
+  cursor: pointer;
+}
+.m-header-right-user {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.m-header-right-usernofity {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+
+  position: relative;
+}
+.m-header-right-usernofity::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: red;
+}
+.m-header-right-useravatar {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.m-header-right-useravatar img {
+  object-fit: cover;
+  width: 100%;
+}
+.m-header-right-username {
+  cursor: pointer;
+}
+.m-header-right-usermore {
+  display: block;
+  font-size: 12px;
   cursor: pointer;
 }
 /* end css layout header */
