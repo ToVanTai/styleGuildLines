@@ -46,12 +46,6 @@ var closePopupformAdd = function () {
 // end handle popupform add
 
 // start handle popupform update
-var showPopupformUpdate = function () {
-  document.querySelector(".m-popupform.popupform-update").classList.add("open")
-}
-var closePopupformUpdate = function () {
-  document.querySelector(".m-popupform.popupform-update").classList.remove("open")
-}
-// end handle popupform update
 
+// end handle popupform update
 

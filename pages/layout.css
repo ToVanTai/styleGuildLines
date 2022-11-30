@@ -1,0 +1,199 @@
+:root {
+  --slidebar-width: 170px;
+  --header-height: 48px;
+  --sidebar-icon-width: 52px;
+}
+.m-main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+/* start css layout header */
+.m-header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 16%);
+
+  display: flex;
+  align-items: center;
+}
+.m-header-left {
+  flex-shrink: 0;
+  position: relative;
+  width: var(--slidebar-width);
+  padding-left: 16px;
+  padding-right: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.m-header-left::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #bbb;
+  transform: translateX(50%);
+}
+.m-header-left-toggleicon {
+  flex-shrink: 1;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../assets/img/toggle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.m-header-left-logo {
+  display: block;
+  height: 24px;
+  cursor: pointer;
+}
+.m-header-left-logo img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.m-header-right {
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.m-header-right-banklogo {
+  width: calc(var(--header-height) - 10px);
+  height: calc(var(--header-height) - 10px);
+  border-radius: 4px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e2e1ff;
+  color: #695ed1;
+  font-size: 13px;
+}
+.m-header-right-bankselect {
+  margin-right: 10px;
+}
+.m-header-right-bankselectdropdown {
+  cursor: pointer;
+}
+/* end css layout header */
+
+/* start css layout sidebar */
+.m-sidebar {
+  flex-shrink: 0;
+  position: relative;
+  margin-top: var(--header-height);
+  width: var(--slidebar-width);
+  background-color: #fff;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+.m-sidebar.small {
+  width: var(--sidebar-icon-width);
+}
+.m-sidebar-item {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.m-sidebar-item.active {
+  background-color: #019160 !important;
+  color: #fff !important;
+}
+.m-sidebar-item:hover {
+  background-color: #e5e5e5;
+  color: #000;
+}
+.m-sidebar-item.active .m-sidebar-item-title,
+.m-sidebar-item:hover .m-sidebar-item-title {
+  font-family: GoogleSans regular;
+}
+
+.m-sidebar-item-icon {
+  height: 100%;
+  width: var(--sidebar-icon-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+.m-sidebar-item-title {
+  font-family: GoogleSans regular;
+  white-space: nowrap;
+}
+
+.m-sidebar-icontoggle {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #fff;
+  background-color: #b8c7d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.m-sidebar.small .m-sidebar-icontoggle i {
+  transform: rotate(180deg);
+}
+/* end css layout sidebar */
+
+/* start css layout container */
+.m-container {
+  flex-grow: 1;
+  background-color: #e9ebee;
+  padding: 24px 8px;
+  padding-top: calc(24px + var(--header-height));
+}
+.m-container-header {
+  display: flex;
+  justify-content: space-between;
+}
+.m-container-header-left {
+  width: 300px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #000;
+}
+.m-container-header-right {
+  width: 100px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #019160;
+}
+.m-container-subheader-content {
+  margin-top: 16px;
+  width: 280px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #bbb;
+}
+
+.m-container-collab {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* end css layout container */

@@ -1,6 +1,7 @@
 .m-table {
   background-color: #fff;
   border-collapse: collapse;
+  width: 100%;
 }
 .m-table th {
   text-align: left;

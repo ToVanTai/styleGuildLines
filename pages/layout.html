@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="m-header">
+      <div class="m-header-left">
+        <div class="m-header-left-toggleicon"></div>
+        <a href="javascript:void(0)" class="m-header-left-logo">
+          <img src="../assets//img/cukcuk-logo.png" alt="" />
+        </a>
+      </div>
+      <div class="m-header-right">
+        <div class="m-header-right-banklogo m-title2">MB</div>
+        <div class="m-header-right-bankselect m-title2">
+          Chi nhánh MISA miền Bắc
+        </div>
+        <div class="m-header-right-bankselectdropdown m-title2">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+
+    <div class="m-main-container">
+      <!-- start sidebar -->
+      <div class="m-sidebar">
+        <a class="m-sidebar-item active">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="m-sidebar-item-title">Hồ sơ điện tử</div>
+        </a>
+        <a class="m-sidebar-item">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <div class="m-sidebar-item-title">Hồ sơ giấy</div>
+        </a>
+        <a class="m-sidebar-item">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="m-sidebar-item-title">Theo dõi tín chỉ</div>
+        </a>
+        <a class="m-sidebar-item">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="m-sidebar-item-title">Theo dõi trang</div>
+        </a>
+        <a class="m-sidebar-item">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="m-sidebar-item-title">Quản lý lao động</div>
+        </a>
+        <a class="m-sidebar-item">
+          <div class="m-sidebar-item-icon">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="m-sidebar-item-title">Thiết lập</div>
+        </a>
+        <div class="m-sidebar-icontoggle" onclick="toggleSidebar()">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+      </div>
+      <!-- end sidebar -->
+
+      <!-- start container -->
+      <div class="m-container">
+        <div class="m-container-header">
+          <div class="m-container-header-left"></div>
+          <div class="m-container-header-right"></div>
+        </div>
+        <div class="m-container-subheader">
+          <div class="m-container-subheader-content"></div>
+          <div class="m-container-subheader-content"></div>
+        </div>
+        <div class="m-container-collab">
+          <div class="m-container-collab-heading m-title2">Collab</div>
+          <div class="m-container-collab-table">
+            <table class="m-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>#</th>
+                  <th>Mã nhân viên</th>
+                  <th>Họ và tên</th>
+                  <th>Vị trí/Chức vụ</th>
+                  <th>Bộ phận/Phòng ban</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="m-table-checkbox"><input type="checkbox" /></td>
+                  <td>1</td>
+                  <td>091824302</td>
+                  <td>Nguyễn Hương Giang</td>
+                  <td>Tổng giám đốc</td>
+                  <td>Khối sản xuất</td>
+                </tr>
+                <tr class="checked">
+                  <td class="m-table-checkbox">
+                    <input type="checkbox" checked />
+                  </td>
+                  <td>2</td>
+                  <td>091824383</td>
+                  <td>Nguyễn Tuấn Hưng</td>
+                  <td>Tổng giám đốc</td>
+                  <td>Văn phòng Sale</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="m-container-collab-bottom">
+            <div class="m-collab-bottom">
+              <div class="m-quantity-show">
+                Hiển thị <b>01-20/123</b> lao động
+              </div>
+              <div class="m-pagination">
+                <ul>
+                  <li class="btn start">
+                    <i class="fas fa-angle-double-left"></i>
+                  </li>
+                  <li class="btn prev"><i class="fas fa-angle-left"></i></li>
+                  <li class="num active">1</li>
+                  <li class="num">2</li>
+                  <li class="num">3</li>
+                  <li class="num">4</li>
+                  <li class="btn next"><i class="fas fa-angle-right"></i></li>
+                  <li class="btn end">
+                    <i class="fas fa-angle-double-right"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="m-collab-change-quantity">
+                <b>20</b> lao động/trang
+                <div class="m-collab-change-quantity-actions">
+                  <span class="increase"
+                    ><i class="fas fa-chevron-up"></i
+                  ></span>
+                  <span class="decrease"
+                    ><i class="fas fa-chevron-down"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
