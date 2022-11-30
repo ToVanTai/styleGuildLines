@@ -55,7 +55,7 @@
 
     <!-- start field input - label -->
     <p style="margin-top: 50px">FILED INPUT - LABEL</p>
-    <div class="row">
+    <div class="row p-8">
       <div class="col col-3">
         <label class="m-label-field-input">Label</label>
         <div class="m-form-control-input">
@@ -85,7 +85,7 @@
     <!-- end field input - label -->
     <!-- start input icon -->
     <p style="margin-top: 50px">FIELD INPUT - ICON</p>
-    <div class="row">
+    <div class="row p-8">
       <div class="col col-3">
         <div class="m-form-control-input">
           <div class="m-input-icon-search">
@@ -255,7 +255,7 @@
     </div>
     <!-- end collab -->
     <!-- start pop-up -->
-    <p>POP-UP</p>
+    <p>POP-UP cảnh báo</p>
     <button class="m-btn" onclick="showPopup('warning')">
       Show popup warning
     </button>
@@ -265,12 +265,7 @@
     <button class="m-btn btn-disable" onclick="showPopup('notify')">
       Show popup notify
     </button>
-    <button class="m-btn" onclick="showPopup('form-add')">
-      Show popup form add
-    </button>
-    <button class="m-btn" onclick="showPopup('form-update')">
-      Show popup form update
-    </button>
+
     <div class="m-popup">
       <div class="m-popup-container">
         <div class="m-popup-close" onclick="closePopup()">
@@ -293,8 +288,325 @@
         </div>
       </div>
     </div>
-    <div class="m-overlay"></div>
     <!-- end pop-up -->
+    <!-- start pop-up form add -->
+    <p>POP-UP FORM THÊM MỚI</p>
+    <button class="m-btn" onclick="showPopupformAdd()">
+      Show popup form add
+    </button>
+    <form class="m-popupform popupform-add">
+      <div class="m-popupform-container">
+        <div class="m-popupform-close" onclick="closePopupformAdd()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popupform-heading m-title">Thêm hồ sơ đính kèm</div>
+        <div class="m-popupform-body">
+          <div class="row">
+            <div class="col col-12">
+              <label class="m-label m-label-field-input">
+                Tên loại văn bản<sup>*</sup>
+              </label>
+              <div class="m-form-control-input">
+                <input
+                  type="text"
+                  class="m-input"
+                  required
+                  placeholder="Nhập tên văn bản" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <label class="m-label m-label-field-input">
+                Số văn bản<sup>*</sup>
+              </label>
+              <div class="m-form-control-input">
+                <input
+                  type="text"
+                  class="m-input"
+                  required
+                  placeholder="Nhập số văn bản" />
+              </div>
+            </div>
+          </div>
+          <div class="row p-8">
+            <div class="col col-6">
+              <label class="m-label m-label-field-input">
+                Ngày phát hành văn bản<sup>*</sup>
+              </label>
+              <div class="m-form-control-input">
+                <input type="date" class="m-input" required />
+              </div>
+            </div>
+            <div class="col col-6">
+              <label class="m-label m-label-field-input">
+                Ngày văn bản có hiệu lực<sup>*</sup>
+              </label>
+              <div class="m-form-control-input">
+                <input type="date" class="m-input" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-popupform-footer">
+          <button class="m-btn btn-disable">Hủy</button>
+          <button class="m-btn icon"><i class="fas fa-save"></i>Lưu</button>
+        </div>
+      </div>
+    </form>
+    <!-- end pop-up form add -->
+    <!-- start pop-up form update -->
+    <p>POP-UP FORM SỬA</p>
+    <button class="m-btn" onclick="showPopupformUpdate()">
+      Show popup form update
+    </button>
+    <form class="m-popupform popupform-update open">
+      <div class="m-popupform-container">
+        <div class="m-popupform-close" onclick="closePopupformUpdate()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popupform-heading m-title">THÔNG TIN NHÂN VIÊN</div>
+        <div class="m-popupform-body">
+          <div class="m-popupform-body-left">
+            <div class="m-popupform-body-avatar"></div>
+            <div class="m-popupform-body-avatar-subtitle m-content-details">
+              (Vui lòng chọn ảnh có định dạng .jpg.jpeg.png.gif.)
+            </div>
+          </div>
+          <div class="m-popupform-body-right">
+            <!-- thong tin chung -->
+            <div class="m-popupform-body-right-heading m-title2">
+              a.thông tin chung:
+            </div>
+            <div class="row p-8">
+              <!-- input for manv -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Mã nhân viên (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="NV000999"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+              <!-- input for hovaten -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Họ và tên (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="Nguyễn Văn Mạnh"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for ngaysinh -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Ngày sinh (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="date"
+                    name=""
+                    value="2022-11-10"
+                    class="m-input"
+                    id="inputDate" />
+                </div>
+              </div>
+              <!-- select for gioi tinh -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Giới tính (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <select class="m-cbb">
+                    <option value="1" selected>Nam</option>
+                    <option value="0">Nữ</option>
+                    <option value="-1">Khác</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for số cmtnd -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Số CMTND/ Căn cước (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="02427414234"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+              <!-- input for ngày cấp số cmtnd -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Ngày cấp (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="date"
+                    name=""
+                    value="2022-11-10"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for nơi cấp -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Nơi cấp (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="Tỉnh Bắc Giang"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for email -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Email (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="email"
+                    name=""
+                    value="manhnv998@gmail.com"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+              <!-- input for số điện thoại -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Số điện thoại (<sup>*</sup>)</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="092847234"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+            </div>
+            <!-- thong tin cong viec -->
+            <div class="m-popupform-body-right-heading m-title2">
+              b. thông tin công việc:
+            </div>
+            <div class="row p-8">
+              <!-- input for vitri -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input">Vị trí</label>
+                <div class="m-form-control-input">
+                  <select class="m-cbb">
+                    <option value="1">Giám đốc</option>
+                    <option value="2">Phó giám đốc</option>
+                  </select>
+                </div>
+              </div>
+              <!-- input for phongban -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input">Phòng ban</label>
+                <div class="m-form-control-input">
+                  <select class="m-cbb">
+                    <option value="1">Phòng nhân sự</option>
+                    <option value="2">Phòng tài chính</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for mstcn -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Mã số thuế cá nhân</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="23424923424234"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+              <!-- input for mức lương cơ bản -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Mức lương cơ bản</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="text"
+                    name=""
+                    value="28.000.000"
+                    class="m-input input-money"
+                    id="" />
+                  <div class="m-input-unit-money">(VNĐ)</div>
+                </div>
+              </div>
+            </div>
+            <div class="row p-8">
+              <!-- input for ngnct -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Ngày gia nhập công ty</label
+                >
+                <div class="m-form-control-input">
+                  <input
+                    type="date"
+                    name=""
+                    value="2022-11-10"
+                    class="m-input"
+                    id="" />
+                </div>
+              </div>
+              <!-- select for ttcv -->
+              <div class="col col-6">
+                <label class="m-label m-label-field-input"
+                  >Tình trạng công việc</label
+                >
+                <div class="m-form-control-input">
+                  <select class="m-cbb">
+                    <option value="1">Đang làm việc</option>
+                    <option value="9">Đã nghỉ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-popupform-footer">
+          <button class="m-btn btn-disable">Hủy</button>
+          <button class="m-btn icon"><i class="fas fa-save"></i>Lưu</button>
+        </div>
+      </div>
+    </form>
+    <!-- end pop-up form update -->
     <script src="./js/app.js"></script>
   </body>
 </html>

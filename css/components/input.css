@@ -1,6 +1,9 @@
-.m-label {
+label.m-label {
   display: block;
   margin-bottom: 4px;
+}
+label.m-label sup {
+  color: #ec5660;
 }
 /* start css select input*/
 .m-cbb {
@@ -76,6 +79,17 @@
   justify-content: flex-end;
   align-items: center;
 }
+.m-input-unit-money {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  padding-right: 24px;
+}
 .m-input {
   position: relative;
   outline: none;
@@ -88,11 +102,16 @@
   padding-left: 16px;
   font-size: 13px;
   color: #000;
-  font-family: GoogleSans regular;
+  font-family: GoogleSans medium;
+}
+.m-input.input-money {
+  text-align: right;
+  padding-right: 65px;
 }
 .m-input.icon {
   padding-left: 40px;
 }
+
 .m-input::placeholder {
   font-size: 11px;
   color: #bbb;
@@ -100,17 +119,6 @@
 }
 .m-input:focus {
   border-color: #019160;
-}
-
-.m-input::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background-color: black;
 }
 
 /* end css input */

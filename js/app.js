@@ -14,8 +14,6 @@ listToastMessenger.forEach((item, index) => {
 //start handle popup 
 var showPopup = function (type) {
   let popupElm = document.querySelector(".m-popup")
-  let overlayElm = document.querySelector(".m-overlay")
-  overlayElm.classList.add("open")
   popupElm.className = "m-popup open"
   switch (type) {
     case "warning":
@@ -33,11 +31,27 @@ var showPopup = function (type) {
   }
 }
 var closePopup = function () {
-  console.log("close");
   let popupElm = document.querySelector(".m-popup")
-  let overlayElm = document.querySelector(".m-overlay")
   popupElm.classList.remove("open")
-  overlayElm.classList.remove("open")
 }
-document.querySelector(".m-overlay").addEventListener("click", closePopup)
 //end handle popup
+
+// start handle popupform add
+var showPopupformAdd = function () {
+  document.querySelector(".m-popupform.popupform-add").classList.add("open")
+}
+var closePopupformAdd = function () {
+  document.querySelector(".m-popupform.popupform-add").classList.remove("open")
+}
+// end handle popupform add
+
+// start handle popupform update
+var showPopupformUpdate = function () {
+  document.querySelector(".m-popupform.popupform-update").classList.add("open")
+}
+var closePopupformUpdate = function () {
+  document.querySelector(".m-popupform.popupform-update").classList.remove("open")
+}
+// end handle popupform update
+
+
